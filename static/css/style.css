@@ -1,0 +1,22 @@
+body {
+
+  color: #f7f7f7;
+}
+
+.jumbotron {
+    background-image: url("../images/nasa.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  }
+
+li {font-family: inherit;
+     font-size: 1rem;
+     text-align: center;
+    }
+
+.list-group-item label, .list-group-item input {
+        float: none; /* if you had floats before? otherwise inline-block will behave differently */
+        display: inline-block;
+        vertical-align: middle;    
+    }
+
