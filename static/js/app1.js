@@ -33,16 +33,17 @@ function handleClick() {
   if (date) {
     // Apply `filter` to the table data to only keep the
     // rows where the `datetime` value matches the filter value
-    //filteredData = filteredData.filter(row => row.datetime === date && row.country === x);
-    str1=`row => row.datetime ==  "1/6/2010" && row.city == "rosewell"`
-    console.log(str1);
-    filteredData = filteredData.filter(str1);
+    filteredData = filteredData.filter(row => row.datetime === date && row.country === x);
+    //str1=`row => row.datetime ==  "1/6/2010" && row.city == "rosewell"`
+    //console.log(str1);
+    //filteredData = filteredData.filter(str1);
   };
 
    // Rebuild the table using the filtered data
   // @NOTE: If no date was entered, then filteredData will
   // just be the original tableData.
   buildTable(filteredData);
+  console.log(filteredData);
 };
 
 
